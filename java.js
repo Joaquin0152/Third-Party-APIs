@@ -10,7 +10,4 @@ function displayTime() {
 setInterval(displayTime, 1000);
 //boom it works!!!!! 
 
-$( function() {
-    $( "#datepicker" ).datepicker();
-  } );
   
