@@ -1,5 +1,6 @@
-// save reference to important DOM elements
+// time DOM elements
 var timeDisplayEl = $('#time-display');
+var dateInputEl = $('#datepicker');
 
 // handle displaying the time
 function displayTime() {
@@ -7,3 +8,9 @@ function displayTime() {
   timeDisplayEl.text(rightNow);
 }
 setInterval(displayTime, 1000);
+//boom it works!!!!! 
+
+$( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  
