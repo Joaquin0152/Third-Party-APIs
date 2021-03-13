@@ -3,6 +3,16 @@ var timeDisplayEl = $('#time-display');
 var dateInputEl = $('#datepicker');
 var clearButton = document.getElementById("clearBtn");
 var saveButton = document.getElementById("saveBtn");
+var sixAm = $("#6am");
+var sevenAm = $("#7am");
+var eightAm = $("#8am");
+var nineAm = $("#9am");
+var tenAm = $("#10am");
+var elevenAm = $("#11am");
+var twelvePm = $("#12pm");
+var onePm = $("#1pm");
+var twoPm = $("#2pm");
+var threePm = $("#3pm");
 
 // handle displaying the time
 function displayTime() {
@@ -27,34 +37,34 @@ $(".saveBtn").on("click", function(){
   }) 
 
   function initPage(){
-    var init9 = JSON.parse(localStorage.getItem("06:30 am"));
+    var init6 = JSON.parse(localStorage.getItem("06:30 AM"));
   sixAm.val(init6);
 
-  var init10 = JSON.parse(localStorage.getItem("07:30 am"))
+  var init7 = JSON.parse(localStorage.getItem("07:30 AM"))
   sevenAm.val(init7);
   
-  var init11 = JSON.parse(localStorage.getItem("08:30 am"))
+  var init8 = JSON.parse(localStorage.getItem("08:30 AM"))
   eightAm.val(init8);
   
-  var init12 = JSON.parse(localStorage.getItem("09:30 am"))
+  var init9 = JSON.parse(localStorage.getItem("09:30 AM"))
   nineAm.val(init9);
   
-  var init1 = JSON.parse(localStorage.getItem("10:30 am"))
+  var init10 = JSON.parse(localStorage.getItem("10:30 AM"))
   tenAm.val(init10);
   
-  var init2 = JSON.parse(localStorage.getItem("11:30 pm"))
-  elevenAm.val(ini11);
+  var init11 = JSON.parse(localStorage.getItem("11:30 AM"))
+  elevenAm.val(init11);
   
-  var init3 = JSON.parse(localStorage.getItem("12:30pm"))
+  var init12 = JSON.parse(localStorage.getItem("12:30 PM"))
   twelvePm.val(init12);
  
-  var init4 = JSON.parse(localStorage.getItem("01:30 pm"))
+  var init1 = JSON.parse(localStorage.getItem("01:30 PM"))
   onePm.val(init1);
   
-  var init5 = JSON.parse(localStorage.getItem("02:30pm"))
+  var init2 = JSON.parse(localStorage.getItem("02:30 PM"))
   twoPm.val(init2);
   
-  var init6 = JSON.parse(localStorage.getItem("03:30 pm"))
+  var init3 = JSON.parse(localStorage.getItem("03:30 PM"))
   threePm.val(init3);
 
 } 
