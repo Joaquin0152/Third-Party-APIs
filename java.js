@@ -36,6 +36,7 @@ $(".saveBtn").on("click", function(){
     initPage()
   }) 
 
+//activitie 23
   function initPage(){
     var init6 = JSON.parse(localStorage.getItem("06:30 AM"));
   sixAm.val(init6);
@@ -68,6 +69,15 @@ $(".saveBtn").on("click", function(){
   threePm.val(init3);
 
 } 
+
+//how to add funciton in order for the background color to change with time. 
+//var past, present, future
+
+if (displayTime < ("id")){
+  $("input-group").addClass("present");
+} else if (displayTime > ("id")){
+  $("input-group").addClass("past");
+};
 
 setInterval(displayTime, 1000);
 //boom it works!!!!! 
